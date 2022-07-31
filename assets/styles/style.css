@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap');
+
+:root {
+    --bg: rgb(92, 92, 92);
+    --card-color: rgb(104, 103, 103);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    background-color: var(--bg);
+    min-height: 100vh;
+    align-items: center;
+}
+
+.container {
+    font-family: 'Outfit', sans-serif;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: var(--card-color);
+    padding: 0 1rem;
+    border-radius: 10px;
+    width: 400px;
+    box-shadow: 0px 0px 90px #313131;
+}
+
+.avatar {
+    position: relative;
+    width: 50%;
+    padding: 7px;
+    left: 90px;
+    border-radius: 50%;
+}
+
+.text {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+.text p {
+    padding-bottom: 15px;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.github,
+.twitch,
+.tiktok {
+    width: 50%;
+    padding-left: 53px;
+    transition: all 0.2s ease-in-out;
+}
+
+.github:hover,
+.twitch:hover,
+.tiktok:hover {
+    transform: scale(120%);
+}
